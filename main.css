@@ -1,0 +1,38 @@
+body {
+    background-color: black;
+    margin: 0;
+    text-align: center;
+}
+
+#top { /* flex container */
+    background-color: #E9ECEF;
+    border: 2px solid red;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#hat-container { /* flex item */
+    background-color: white;
+    border: 2px solid orange;
+    width: 90%;
+    height: 8rem;
+}
+
+#bottom { /* flex container */
+    display: flex;
+    background-color: white;
+    border: 2px solid yellow;
+    height: 50vh;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.studentContainer { /* flex item */
+    border: 2px solid purple;
+    width: 45%;
+    height: 80%;
+}
