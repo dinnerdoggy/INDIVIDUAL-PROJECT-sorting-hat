@@ -51,8 +51,17 @@ body {
 
 .card { /* flex item */
     width: 40%;
+    height: fit-content;
+    margin: 0;
 }
 
-.img-fluid {
-    width: 20rem;
+/* .row {
+    background-color: red;
+} */
+
+.col-md-4 {
+    background-color: red;
+    height: inherit;
+    margin: 0;
+    align-self: stretch;
 }
