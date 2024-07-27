@@ -55,13 +55,13 @@ body {
     margin: 0;
 }
 
-/* .row {
-    background-color: red;
-} */
-
 .col-md-4 {
-    background-color: red;
-    height: inherit;
-    margin: 0;
-    align-self: stretch;
+    background-color: #7F0A0A;
+}
+
+.expelBtn {
+    border: none;
+    border-radius: 5px;
+    background-color: #DD3444;
+    color: white;
 }
