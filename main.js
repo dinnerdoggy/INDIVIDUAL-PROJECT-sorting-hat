@@ -15,7 +15,7 @@ const students = [
         id: 3,
         imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKxa9WE-lbzQc9WfLYjTIv2HyC_C8ZiwrwEg&s",
         name: "Luna",
-        house: "Ravenclaw",
+        house: "RAVENCLAW",
     },
 ]
 
@@ -30,12 +30,12 @@ const renderDom = (array) => {
         <div class="card mb-3" style="max-width: 540px;">
             <div class="row g-0">
                 <div class="col-md-4">
-                    <img src="${student.imageUrl}" class="img-fluid rounded-start" alt="image of student">
                 </div>
                 <div class="col-md-8">
                     <div class="card-body">
                         <h5 class="card-title">${student.name}</h5>
                         <p class="card-text">${student.house}</p>
+                        <button class="expelBtn">EXPEL</button>
                     </div>
                 </div>
             </div>
