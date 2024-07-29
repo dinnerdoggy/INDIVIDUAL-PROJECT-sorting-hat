@@ -51,15 +51,16 @@ const renderDom = (array, dom) => {
     if (e.target.id.includes("delete")) { // if the target that is clicked has the "delete" id
       const [, id] = e.target.id.split("--"); 
       const index = students.findIndex(e => e.id === Number(id)); //turning the id string into a number and putting it in the index variable
-      expelled.push(students.slice(index, (index + 1))); // Put expelled student into a new array
+      const dummies = students.slice(index, (index + 1)); // Put expelled student into a new array
+      expelled.push(dummies[0]);
       students.splice(index, 1); // Remove target student from students
       domString1.innerHTML = "";
       domString2.innerHTML = "";
-      console.log(expelled);
       renderDom(students, domString1);
       renderDom(expelled, domString2);
     }
   });
-  
+  console.log(students);
+  console.log(expelled);
   renderDom(students, domString1);
   //renderDom(expelled, domString2);
