@@ -6,7 +6,7 @@ body {
 
 #top { /* flex container */
     background-color: #E9ECEF;
-    border: 2px solid red;
+    border: 2px solid #EEEEEE;
     min-height: 50vh;
     display: flex;
     justify-content: center;
@@ -20,7 +20,7 @@ body {
 
 #hat-container { /* flex item & container for hat card/form*/
     background-color: white;
-    border: 2px solid orange;
+    border: 2px solid #EEEEEE;
     width: 90%;
     height: fit-content;
     display: flex;
@@ -30,7 +30,7 @@ body {
 #bottom { /* flex container */
     display: flex;
     background-color: white;
-    border: 2px solid yellow;
+    border: 2px solid #EEEEEE;
     min-height: 50vh;
     justify-content: center;
     align-items: center;
@@ -38,7 +38,8 @@ body {
 }
 
 .studentContainer { /* flex item & container for img-fluid */
-    border: 2px solid purple;
+    border: 2px solid #EEEEEE;
+    border-radius: 5px;
     min-width: 45%;
     min-height: 25rem;
     display: flex;
@@ -55,6 +56,10 @@ body {
     margin: 0;
 }
 
+.card-body {
+    width: fit-content;
+}
+
 .col-md-4 {
     background-color: #7F0A0A;
 }
@@ -64,4 +69,16 @@ body {
     border-radius: 5px;
     background-color: #DD3444;
     color: white;
+}
+
+#expelled .card .row .col-md-8 .card-body .expelBtn {
+    display: none;
+}
+
+#expelled .card .row .col-md-8 .card-body .card-text {
+    display: none;
+}
+
+#expelled .card .row .col-md-4 {
+    display: none;
 }
