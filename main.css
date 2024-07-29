@@ -56,6 +56,10 @@ body {
     margin: 0;
 }
 
+.card-body {
+    width: fit-content;
+}
+
 .col-md-4 {
     background-color: #7F0A0A;
 }
@@ -65,4 +69,16 @@ body {
     border-radius: 5px;
     background-color: #DD3444;
     color: white;
+}
+
+#expelled .card .row .col-md-8 .card-body .expelBtn {
+    display: none;
+}
+
+#expelled .card .row .col-md-8 .card-body .card-text {
+    display: none;
+}
+
+#expelled .card .row .col-md-4 {
+    display: none;
 }
