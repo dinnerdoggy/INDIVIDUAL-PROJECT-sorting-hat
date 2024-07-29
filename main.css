@@ -19,9 +19,11 @@ body {
 }
 
 #hat-container { /* flex item & container for hat card/form*/
+    margin-top: 2rem;
     background-color: white;
     border: 2px solid #EEEEEE;
     width: 90%;
+    min-height: 8rem;
     height: fit-content;
     display: flex;
     justify-content: center;
@@ -46,7 +48,7 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: 2rem;
+    gap: 1rem;
     align-content: center;
 }
 
@@ -71,6 +73,7 @@ body {
     color: white;
 }
 
+/* vvv Expelled students styling vvv */
 #expelled .card .row .col-md-8 .card-body .expelBtn {
     display: none;
 }

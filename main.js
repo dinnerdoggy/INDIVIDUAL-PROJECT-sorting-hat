@@ -22,9 +22,11 @@ const students = [
 const expelled = [];
 
 // DOM connection
+const domForm = document.querySelector("#hat-container");
 const domString1 = document.querySelector("#admitted"); 
-const domString2 = document.querySelector("#expelled")
+const domString2 = document.querySelector("#expelled");
 
+// Render display function
 const renderDom = (array, dom) => {
     dom.innerHTML = ""; // Clear the existing content
     array.forEach((student) => {
@@ -44,23 +46,33 @@ const renderDom = (array, dom) => {
         </div>
       `;
     });
-  };
+};
 
+// Event listeners
 
-  domString1.addEventListener("click", (e) => { // listening for a click anywhere in this zone
-    if (e.target.id.includes("delete")) { // if the target that is clicked has the "delete" id
-      const [, id] = e.target.id.split("--"); 
-      const index = students.findIndex(e => e.id === Number(id)); //turning the id string into a number and putting it in the index variable
-      const dummies = students.slice(index, (index + 1)); // Put expelled student into a new array
-      expelled.push(dummies[0]);
-      students.splice(index, 1); // Remove target student from students
-      domString1.innerHTML = "";
-      domString2.innerHTML = "";
-      renderDom(students, domString1);
-      renderDom(expelled, domString2);
-    }
-  });
-  console.log(students);
-  console.log(expelled);
-  renderDom(students, domString1);
-  //renderDom(expelled, domString2);
+domForm.addEventListener("click", (e) => {
+    document.querySelector("#hatCard").style.display = "none";
+    domForm.innerHTML += `
+    <form>
+        <div class="mb-3">
+            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter your name">
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>`
+})
+
+domString1.addEventListener("click", (e) => { // listening for a click anywhere in this zone
+  if (e.target.id.includes("delete")) { // if the target that is clicked has the "delete" id
+    const [, id] = e.target.id.split("--"); 
+    const index = students.findIndex(e => e.id === Number(id)); //turning the id string into a number and putting it in the index variable
+    const dummies = students.slice(index, (index + 1)); // Put expelled student into a new array
+    expelled.push(dummies[0]);
+    students.splice(index, 1); // Remove target student from students
+    domString1.innerHTML = "";
+    domString2.innerHTML = "";
+    renderDom(students, domString1);
+    renderDom(expelled, domString2);
+  }
+});
+
+renderDom(students, domString1);
