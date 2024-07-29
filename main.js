@@ -51,14 +51,17 @@ const renderDom = (array, dom) => {
 // Event listeners
 
 domForm.addEventListener("click", (e) => {
-    document.querySelector("#hatCard").style.display = "none";
-    domForm.innerHTML += `
-    <form>
-        <div class="mb-3">
-            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter your name">
-        </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
-    </form>`
+    if (e.target.id.includes("nameBtn")) {
+        document.querySelector("#hatCard").style.display = "none";
+        domForm.innerHTML += `
+        <form>
+            <div class="mb-3">
+                <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter your name">
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>`
+
+    }
 })
 
 domString1.addEventListener("click", (e) => { // listening for a click anywhere in this zone
