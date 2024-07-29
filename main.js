@@ -22,6 +22,7 @@ const students = [
 
 // DOM connection
 const domString1 = document.querySelector("#admitted"); 
+const domString2 = document.querySelector("#expelled")
 
 const renderDom = (array) => {
     domString1.innerHTML = ""; // Clear the existing content
@@ -35,7 +36,7 @@ const renderDom = (array) => {
                     <div class="card-body">
                         <h5 class="card-title">${student.name}</h5>
                         <p class="card-text">${student.house}</p>
-                        <button class="expelBtn">EXPEL</button>
+                        <button id="delete--${student.id}" class="expelBtn">EXPEL</button>
                     </div>
                 </div>
             </div>
@@ -43,5 +44,17 @@ const renderDom = (array) => {
       `;
     });
   };
+
+
+  domString1.addEventListener("click", (e) => { // listening for a click anywhere in this zone
+    if (e.target.id.includes("delete")) { // if the target that is clicked has the "delete" id
+      const [, id] = e.target.id.split("--"); 
+      const index = students.findIndex(e => e.id === Number(id)); //turning the id string into a number and putting it in the index variable
+      const expelled = students.slice(index, (index + 1)); // Put expelled student into a new array
+      students.splice(index, 1); // Remove target student from students array
+      domString1.innerHTML = "";
+      renderDom(students);
+    }
+  });
   
   renderDom(students)
