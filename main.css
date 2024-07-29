@@ -40,7 +40,7 @@ body {
 .studentContainer { /* flex item & container for img-fluid */
     border: 2px solid purple;
     min-width: 45%;
-    min-height: 80%;
+    min-height: 25rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -50,7 +50,7 @@ body {
 }
 
 .card { /* flex item */
-    width: 40%;
+    width: 45%;
     height: inherit;
     margin: 0;
 }
