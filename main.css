@@ -93,6 +93,7 @@ body {
     justify-content: center;
     align-items: center;
     gap: 1rem;
+    flex-wrap: wrap;
 }
 
 .studentContainer { /* flex item & container for img-fluid */
