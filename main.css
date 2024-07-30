@@ -59,6 +59,10 @@ body {
     color: #121212;
 }
 
+#huffBtn:hover {
+    color: white;
+}
+
 #rvnBtn {
     background-color: #007BFE;
 }
