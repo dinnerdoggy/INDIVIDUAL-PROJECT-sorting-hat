@@ -29,6 +29,10 @@ body {
     justify-content: center;
 }
 
+#nameForm {
+    display: none;
+}
+
 #bottom { /* flex container */
     display: flex;
     background-color: white;

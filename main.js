@@ -25,6 +25,7 @@ const expelled = [];
 const domForm = document.querySelector("#hat-container");
 const domString1 = document.querySelector("#admitted"); 
 const domString2 = document.querySelector("#expelled");
+const form = document.querySelector("form");
 
 // Render display function
 const renderDom = (array, dom) => {
@@ -48,19 +49,32 @@ const renderDom = (array, dom) => {
     });
 };
 
+domForm.innerHTML += `
+        <form id="nameForm">
+            <div class="mb-3">
+                <input type="text" class="form-control" id="nameInput" placeholder="Enter your name">
+            </div>
+            <button id="submitBtn" type="submit" class="btn btn-primary">Submit</button>
+        </form>
+        `;
+
+const nameFrm = document.querySelector("#nameForm");
+const hatCard = document.querySelector("#hatCard");
+//nameFrm.style.display = "none";
+
 // Event listeners
 
-domForm.addEventListener("click", (e) => {
-    if (e.target.id.includes("nameBtn")) {
-        document.querySelector("#hatCard").style.display = "none";
-        domForm.innerHTML += `
-        <form>
-            <div class="mb-3">
-                <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter your name">
-            </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
-        </form>`
 
+domForm.addEventListener("click", (e) => {
+    e.preventDefault();
+    if (e.target.id.includes("nameBtn")) {
+        hatCard.style.display = "none";
+        nameFrm.style.display = "block";
+        
+    } else if (e.target.id.includes("submitBtn")) {
+        nameFrm.style.display = "none";
+        hatCard.style.display = "block";
+        domForm.addEventListener("submit", createStudent());
     }
 })
 
@@ -77,5 +91,31 @@ domString1.addEventListener("click", (e) => { // listening for a click anywhere 
     renderDom(expelled, domString2);
   }
 });
+
+// Create a new student after entering name and clicking the submit button
+
+const houses = ["GRYFFINDOR", "RAVENCLAW", "SLYTHERIN"];
+
+function randomHouse() {
+    return Math.floor(Math.random() * 3);
+  };
+
+const createStudent = (e) => {
+    //e.preventDefault();
+
+    const newStudentObject = {
+        id: students.length + 1,
+        name: document.querySelector("#nameInput").value,
+        house: houses[randomHouse()],
+        };
+
+    students.push(newStudentObject);
+    domString1.innerHTML = "";
+    renderDom(students, domString1);
+    form.reset();
+    console.log(students);
+}
+
+
 
 renderDom(students, domString1);
