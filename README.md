@@ -55,3 +55,8 @@ Think of a way you can expel students without just hiding those divs on the page
 - House Colors: The color of the student's card changes depending on which house they were sorted.
 - Card Sorting/Ordering: Sort the student cards by some criteria (i.e. alphabetically by name, by house)
 
+*********Issue ticket - "Things I learned from planning"
+It has helped me be less distracted, and able to focus on a direct path
+I have to hold less information in my head if I can account for my foresight writing by structuring my steps around efficiency
+
+Link to deployed netlify page: https://caseys-sorting-hat.netlify.app/
