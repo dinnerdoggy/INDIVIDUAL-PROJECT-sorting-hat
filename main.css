@@ -31,6 +31,10 @@ body {
     align-items: center;
 }
 
+#nameBtn {
+    padding: 6px 12px;
+}
+
 #nameForm {
     display: none;
 }
@@ -73,9 +77,12 @@ body {
 
 .btn {
     flex-grow: 1;
+    flex-shrink: 1;
     border: none;
     color: white;
     border-radius: 0;
+    padding: 6px 0;
+    font-size: clamp(.5rem, 1rem, 1rem);
 }
 
 #bottom { /* flex container */
