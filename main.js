@@ -69,8 +69,12 @@ btnWrapper.addEventListener("click", (e) => {
         students.map((student) => {
         if (student.house === house) {
             filterArray.push(student)
+            renderDom(filterArray, domString1);
+        } else if (house === "ALL") {
+            renderDom(students, domString1);
+        } else if (filterArray.length === 0) {
+            renderDom(filterArray, domString1)
         }})
-        renderDom(filterArray, domString1);
         filterArray.length = 0;
     }
     }
