@@ -20,6 +20,7 @@ const students = [
 ]
 
 const expelled = [];
+const filterArray = [];
 
 // DOM connection
 const domForm = document.querySelector("#hat-container");
@@ -59,8 +60,27 @@ domForm.innerHTML += `
 
 const nameFrm = document.querySelector("#nameForm");
 const hatCard = document.querySelector("#hatCard");
+const btnWrapper = document.querySelector("#btnWrapper");
 
 // Event listeners
+btnWrapper.addEventListener("click", (e) => {
+    if (e.target.id.includes("Btn")) {
+        const house = e.target.getAttribute("data-filter");
+        students.map((student) => {
+        if (student.house === house) {
+            filterArray.push(student)
+            renderDom(filterArray, domString1);
+        } else if (house === "ALL") {
+            renderDom(students, domString1);
+        } else if (filterArray.length === 0) {
+            renderDom(filterArray, domString1)
+        }})
+        filterArray.length = 0;
+    }
+    }
+)
+
+// Hide elements not in use
 domForm.addEventListener("click", (e) => {
     e.preventDefault();
     if (e.target.id.includes("nameBtn")) {
@@ -90,10 +110,10 @@ domString1.addEventListener("click", (e) => { // listening for a click anywhere 
 
 // Create a new student after entering name and clicking the submit button
 
-const houses = ["GRYFFINDOR", "RAVENCLAW", "SLYTHERIN"];
+const houses = ["GRYFFINDOR", "RAVENCLAW", "SLYTHERIN", "HUFFLEPUFF"];
 
 function randomHouse() {
-    return Math.floor(Math.random() * 3);
+    return Math.floor(Math.random() * 4);
   };
 
 const createStudent = (e) => {
@@ -109,7 +129,6 @@ const createStudent = (e) => {
     domString1.innerHTML = "";
     renderDom(students, domString1);
     nameFrm.reset();
-    console.log(students);
 }
 
 
