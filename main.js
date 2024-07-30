@@ -25,7 +25,6 @@ const expelled = [];
 const domForm = document.querySelector("#hat-container");
 const domString1 = document.querySelector("#admitted"); 
 const domString2 = document.querySelector("#expelled");
-const form = document.querySelector("form");
 
 // Render display function
 const renderDom = (array, dom) => {
@@ -60,11 +59,8 @@ domForm.innerHTML += `
 
 const nameFrm = document.querySelector("#nameForm");
 const hatCard = document.querySelector("#hatCard");
-//nameFrm.style.display = "none";
 
 // Event listeners
-
-
 domForm.addEventListener("click", (e) => {
     e.preventDefault();
     if (e.target.id.includes("nameBtn")) {
@@ -112,7 +108,7 @@ const createStudent = (e) => {
     students.push(newStudentObject);
     domString1.innerHTML = "";
     renderDom(students, domString1);
-    form.reset();
+    nameFrm.reset();
     console.log(students);
 }
 

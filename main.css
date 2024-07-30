@@ -33,6 +33,10 @@ body {
     display: none;
 }
 
+#nameInput {
+    margin-top: 2rem;
+}
+
 #bottom { /* flex container */
     display: flex;
     background-color: white;
@@ -75,6 +79,10 @@ body {
     border-radius: 5px;
     background-color: #DD3444;
     color: white;
+}
+
+#submitBtn {
+    margin-bottom: 1rem;
 }
 
 /* vvv Expelled students styling vvv */
