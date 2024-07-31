@@ -22,6 +22,18 @@ const students = [
 const expelled = [];
 const filterArray = [];
 
+// .sort() has a lot going on under the hood that I don't get, but in essence... it sorts :D
+// .localCompare() returns the value -1, 0, or 1. This is based on how they would be sorted.
+// Used together in this context, sort receives the numeric value returned by localCompare and sorts the objects based on that
+const sortStudents = () => {
+    students.sort((currentStudent, nextStudent) => currentStudent.name.localeCompare(nextStudent.name));
+    return students;
+}
+
+// Sorting the students array before it's rendered to the page
+sortStudents();
+
+
 // DOM connection
 const domForm = document.querySelector("#hat-container");
 const domString1 = document.querySelector("#admitted"); 
@@ -30,7 +42,7 @@ const domString2 = document.querySelector("#expelled");
 // Render display function
 const renderDom = (array, dom) => {
     dom.innerHTML = ""; // Clear the existing content
-    array.forEach((student) => {
+    array.forEach((student) => { // looping throught the array passed in, and creating a card on the array for each item in the array
       dom.innerHTML += `
         <div class="card mb-3" style="max-width: 540px;">
             <div class="row g-0">
@@ -49,6 +61,7 @@ const renderDom = (array, dom) => {
     });
 };
 
+// This is the name submit form
 domForm.innerHTML += `
         <form id="nameForm">
             <div class="mb-3">
@@ -126,6 +139,9 @@ const createStudent = (e) => {
         };
 
     students.push(newStudentObject);
+
+    sortStudents();
+
     domString1.innerHTML = "";
     renderDom(students, domString1);
     nameFrm.reset();
