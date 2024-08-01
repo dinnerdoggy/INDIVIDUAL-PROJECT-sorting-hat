@@ -99,7 +99,8 @@ body {
 .studentContainer { /* flex item & container for img-fluid */
     border: 2px solid #EEEEEE;
     border-radius: 5px;
-    min-width: 45%;
+    min-width: 35%;
+    max-width: 50%;
     min-height: 25rem;
     display: flex;
     flex-wrap: wrap;
@@ -109,18 +110,38 @@ body {
     align-content: center;
 }
 
-.card { /* flex item */
-    width: 45%;
+.card { /* flex item YOUR ACTUAL OUTER MOST CARD BORDER*/
+    width: 200px;
     height: inherit;
     margin: 0;
 }
 
 .card-body {
     width: fit-content;
+    
+}
+
+.studentCards { /* The direct parent of .card! */
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    min-height: 400px;
+    gap: 2rem;
+    justify-content: center;
+    align-content: center;
 }
 
 .col-md-4 {
     background-color: #7F0A0A;
+    height: fit-content;
+}
+
+.col-md-8 {
+    /* border: 5px solid pink; */
+}
+
+.row {
+    width: 100%;
 }
 
 .expelBtn {
@@ -140,9 +161,26 @@ body {
     display: none;
 }
 
+
+
+
+
+
+
 #expelled .card .row .col-md-8 .card-body .card-text {
     display: none;
 }
+
+#expelled .card .row {
+    display: flex;
+    justify-content: center;
+}
+
+#expelled .card .row .col-md-8 {
+    display: flex;
+    justify-content: center;
+}
+
 
 #expelled .card .row .col-md-4 {
     display: none;
@@ -153,5 +191,5 @@ body {
     background-size: cover;
     color: white;
     text-shadow: 0 0 3px red;
-    align-items: center;
+    text-align: center;
 }

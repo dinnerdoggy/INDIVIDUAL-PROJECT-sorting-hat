@@ -36,8 +36,8 @@ sortStudents();
 
 // DOM connection
 const domForm = document.querySelector("#hat-container");
-const domString1 = document.querySelector("#admitted"); 
-const domString2 = document.querySelector("#expelled");
+const domString1 = document.querySelector(".studentCards"); 
+const domString2 = document.querySelector(".expelledCards");
 
 // Render display function
 const renderDom = (array, dom) => {
