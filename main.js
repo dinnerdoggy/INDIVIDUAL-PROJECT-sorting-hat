@@ -1,9 +1,9 @@
 const students = [
     {
         id: 1,
-        //imageUrl: "https://assets-prd.ignimgs.com/2021/01/26/harry-potter-button-1611619333944.jpg",
-        name: "Harry",
-        house: "GRYFFINDOR",
+        //imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKxa9WE-lbzQc9WfLYjTIv2HyC_C8ZiwrwEg&s",
+        name: "Luna",
+        house: "RAVENCLAW",
     },
     {
         id: 2,
@@ -13,9 +13,9 @@ const students = [
     },
     {
         id: 3,
-        //imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKxa9WE-lbzQc9WfLYjTIv2HyC_C8ZiwrwEg&s",
-        name: "Luna",
-        house: "RAVENCLAW",
+        //imageUrl: "https://assets-prd.ignimgs.com/2021/01/26/harry-potter-button-1611619333944.jpg",
+        name: "Harry",
+        house: "GRYFFINDOR",
     },
 ]
 
@@ -38,6 +38,7 @@ sortStudents();
 const domForm = document.querySelector("#hat-container");
 const domString1 = document.querySelector(".studentCards"); 
 const domString2 = document.querySelector(".expelledCards");
+const domBanner = document.querySelector(".col-md-4");
 
 // Render display function
 const renderDom = (array, dom) => {
@@ -46,7 +47,7 @@ const renderDom = (array, dom) => {
       dom.innerHTML += `
         <div class="card mb-3" style="max-width: 540px;">
             <div class="row g-0">
-                <div class="col-md-4">
+                <div class="col-md-4 ${student.house}">
                 </div>
                 <div class="col-md-8">
                     <div class="card-body">

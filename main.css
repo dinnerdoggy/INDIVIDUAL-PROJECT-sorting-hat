@@ -134,8 +134,23 @@ body {
     align-content: center;
 }
 
-.col-md-4 {
+.GRYFFINDOR {
     background-color: #7F0A0A;
+}
+
+.HUFFLEPUFF {
+    background-color: #E3A000;
+}
+
+.RAVENCLAW {
+    background-color: #00165E;
+}
+
+.SLYTHERIN {
+    background-color: #033807;
+}
+
+.col-md-4 {
     height: inherit;
     width: 2rem;
 }
