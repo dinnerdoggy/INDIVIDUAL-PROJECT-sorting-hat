@@ -29,7 +29,7 @@ https://www.loom.com/share/829b90d831ea441ba2db6bea724af210
 
 ## Project Screenshots
 
-<img width="500" alt="preview of name entry" src="https://github.com/user-attachments/assets/bc11f70c-05eb-4f22-881b-927d2b4be7c8">
+<img width="500" alt="preview of name entry" src="https://github.com/user-attachments/assets/352b5cc3-fe98-48f9-85fb-53b81a79508f">
 <img width="500" alt="preview of name entry" src="https://github.com/user-attachments/assets/0af5a646-5302-40aa-82ec-1f6d48c95cff">
 <img width="500" alt="preview of students and expelled students" src="https://github.com/user-attachments/assets/148c68da-e5c2-4066-847c-8c8740720cd4">
 
