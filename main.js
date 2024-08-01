@@ -70,14 +70,18 @@ const renderDom = (array, dom) => {
 };
 
 // This is the name submit form
-domForm.innerHTML += `
-        <form id="nameForm">
-            <div class="mb-3">
-                <input type="text" class="form-control" id="nameInput" placeholder="Enter your name">
-            </div>
-            <button id="submitBtn" type="submit" class="btn btn-primary">Submit</button>
-        </form>
-        `;
+function makeForm() {
+    domForm.innerHTML += `
+            <form id="nameForm">
+                <div class="mb-3">
+                    <input type="text" class="form-control" id="nameInput" placeholder="Enter your name">
+                </div>
+                <button id="submitBtn" type="submit" class="btn btn-primary">Submit</button>
+            </form>
+            `;
+}
+
+makeForm();
 
 const nameFrm = document.querySelector("#nameForm");
 const hatCard = document.querySelector("#hatCard");
