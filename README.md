@@ -28,6 +28,9 @@ https://www.loom.com/share/829b90d831ea441ba2db6bea724af210
 - [dbdiagram](https://dbdiagram.io/d/student-66a523a08b4bb5230e83dead)
 
 ## Project Screenshots
+![image](https://github.com/user-attachments/assets/bc11f70c-05eb-4f22-881b-927d2b4be7c8)
+
+<img width="1148" alt="Your Alt" src="https://github.com/user-attachments/assets/8726e808-6993-4909-bb8f-662ff8e56635">
 <img width="1148" alt="Your Alt" src="https://github.com/user-attachments/assets/4ede5e61-c951-40c4-85f8-988b1820b2c8">
 
 ## Contributors
