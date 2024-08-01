@@ -30,8 +30,9 @@ https://www.loom.com/share/829b90d831ea441ba2db6bea724af210
 ## Project Screenshots
 ![image](https://github.com/user-attachments/assets/bc11f70c-05eb-4f22-881b-927d2b4be7c8)
 
-<img width="1148" alt="Your Alt" src="https://github.com/user-attachments/assets/8726e808-6993-4909-bb8f-662ff8e56635">
-<img width="1148" alt="Your Alt" src="https://github.com/user-attachments/assets/4ede5e61-c951-40c4-85f8-988b1820b2c8">
+<img width="1148" alt="Your Alt" src="https://github.com/user-attachments/assets/231fc879-f3ad-4ffc-bb93-4e39325be076">
+<img width="1148" alt="Your Alt" src="https://github.com/user-attachments/assets/0af5a646-5302-40aa-82ec-1f6d48c95cff">
+<img width="1148" alt="Your Alt" src="https://github.com/user-attachments/assets/148c68da-e5c2-4066-847c-8c8740720cd4">
 
 ## Contributors
 - [Casey Cunningham](https://github.com/dinnerdoggy)
