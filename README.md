@@ -24,7 +24,7 @@ This app lets you give your name to the sorting hat from Harry Potter and be giv
 https://www.loom.com/share/829b90d831ea441ba2db6bea724af210
 
 ## Relevant Links
-- [Check out the deployed site](#[(https://caseys-sorting-hat.netlify.app/)])
+- [Check out the deployed site]https://caseys-sorting-hat.netlify.app/
 - [dbdiagram](#[your-link](https://dbdiagram.io/d/student-66a523a08b4bb5230e83dead))
 
 ## Project Screenshots <!-- These can be inside of your project. Look at the repos from class and see how the images are included in the readme -->
