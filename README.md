@@ -1,5 +1,6 @@
-# Casey's Sorting Hat  [![Netlify Status](https://api.netlify.com/api/v1/badges/4ab7e730-7ed3-4cfd-a988-66195e79a991/deploy-status)](https://app.netlify.com/sites/drt-sortinghat/deploys)
+# Casey's Sorting Hat  [![Netlify Status](https://api.netlify.com/api/v1/badges/da130387-4e0f-4614-8b14-aac098c0039f/deploy-status)](https://app.netlify.com/sites/caseys-sorting-hat/deploys)
 <!-- update the netlify badge above with your own badge that you can find at netlify under settings/general#status-badges -->
+
 
 This app lets you give your name to the sorting hat from Harry Potter and be given your school. You can enter as many names as you like, and you can expel students as well.
 
