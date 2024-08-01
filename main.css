@@ -147,3 +147,11 @@ body {
 #expelled .card .row .col-md-4 {
     display: none;
 }
+
+#expelled .card {
+    background-image: url("images/evil-bg.jpg");
+    background-size: cover;
+    color: white;
+    text-shadow: 0 0 3px red;
+    align-items: center;
+}
