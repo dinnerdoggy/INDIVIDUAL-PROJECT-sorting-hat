@@ -1,22 +1,29 @@
 const students = [
     {
         id: 1,
-        //imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKxa9WE-lbzQc9WfLYjTIv2HyC_C8ZiwrwEg&s",
         name: "Luna",
         house: "RAVENCLAW",
     },
     {
         id: 2,
-        //imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_VTMC7wxQXtVWYIB7BSAgVeBs1HlGbnn-oA&s",
         name: "Hermione",
         house: "GRYFFINDOR",
     },
     {
         id: 3,
-        //imageUrl: "https://assets-prd.ignimgs.com/2021/01/26/harry-potter-button-1611619333944.jpg",
         name: "Harry",
         house: "GRYFFINDOR",
     },
+    {
+        id: 4,
+        name: "Ernie",
+        house: "HUFFLEPUFF",
+    },
+    {
+        id: 5,
+        name: "Draco",
+        house: "SLYTHERIN",
+    }
 ]
 
 const expelled = [];
