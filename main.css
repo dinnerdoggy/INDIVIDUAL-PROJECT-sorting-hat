@@ -120,6 +120,7 @@ body {
 
 .card-body {
     width: fit-content;
+    height: inherit;
     
 }
 
@@ -135,7 +136,7 @@ body {
 
 .col-md-4 {
     background-color: #7F0A0A;
-    height: 100%;
+    height: inherit;
     width: 2rem;
 }
 
@@ -144,6 +145,7 @@ body {
 .row {
     width: 100%;
     flex-wrap: nowrap;
+    height: inherit;
 }
 
 .expelBtn {
