@@ -20,11 +20,11 @@ This app lets you give your name to the sorting hat from Harry Potter and be giv
 - Card Ordering: Sorts the student cards alphabetically
 - Voldermort's Army: A separate container of cards that hold the cards for students that have been expelled.
 
-## Video Walkthrough of APP NAME <!-- A loom link is sufficient -->
+## Video Walkthrough of Casey's Sorting Hat
 https://www.loom.com/share/829b90d831ea441ba2db6bea724af210
 
 ## Relevant Links
-- [Check out the deployed site](#[your-link](https://caseys-sorting-hat.netlify.app/))
+- [Check out the deployed site](#(https://caseys-sorting-hat.netlify.app/))
 - [dbdiagram](#[your-link](https://dbdiagram.io/d/student-66a523a08b4bb5230e83dead))
 
 ## Project Screenshots <!-- These can be inside of your project. Look at the repos from class and see how the images are included in the readme -->
