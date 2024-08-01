@@ -3,9 +3,9 @@
 
 This app lets you give your name to the sorting hat from Harry Potter and be given your school. You can enter as many names as you like, and you can expel students as well.
 
-[[View App](https://caseys-sorting-hat.netlify.app/)
+[View App](https://caseys-sorting-hat.netlify.app/)
 
-## Get Started
+## Code Preview
 ![image](https://github.com/user-attachments/assets/53135f70-cc2f-41e6-9381-93762565ba11)
 
 
@@ -28,7 +28,6 @@ https://www.loom.com/share/829b90d831ea441ba2db6bea724af210
 - [dbdiagram](https://dbdiagram.io/d/student-66a523a08b4bb5230e83dead)
 
 ## Project Screenshots
-![image]()
 
 <img width="500" alt="preview of name entry" src="https://github.com/user-attachments/assets/bc11f70c-05eb-4f22-881b-927d2b4be7c8">
 <img width="500" alt="preview of name entry" src="https://github.com/user-attachments/assets/0af5a646-5302-40aa-82ec-1f6d48c95cff">
