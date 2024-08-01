@@ -141,8 +141,7 @@ function randomHouse() {
     return Math.floor(Math.random() * 4);
   };
 
-const createStudent = (e) => {
-    //e.preventDefault();
+const createStudent = () => {
 
     const newStudentObject = {
         id: students.length + 1,
