@@ -25,10 +25,11 @@ https://www.loom.com/share/829b90d831ea441ba2db6bea724af210
 
 ## Relevant Links
 - [Check out the deployed site](https://caseys-sorting-hat.netlify.app/)
-- [dbdiagram](#[your-link](https://dbdiagram.io/d/student-66a523a08b4bb5230e83dead))
+- [dbdiagram](https://dbdiagram.io/d/student-66a523a08b4bb5230e83dead)
 
-## Project Screenshots <!-- These can be inside of your project. Look at the repos from class and see how the images are included in the readme -->
-<img width="1148" alt="Your Alt" src="your-link.png">
+## Project Screenshots
+<img width="1148" alt="Your Alt" src="![image](https://github.com/user-attachments/assets/4ede5e61-c951-40c4-85f8-988b1820b2c8)
+">
 
 ## Contributors
 - [Casey Cunningham](https://github.com/dinnerdoggy)
