@@ -22,7 +22,7 @@ This app lets you give your name to the sorting hat from Harry Potter and be giv
 - Voldermort's Army: A separate container of cards that hold the cards for students that have been expelled.
 
 ## Video Walkthrough of Casey's Sorting Hat
-<iframe width="1280" height="720" src="https://www.youtube.com/embed/lKnnIqDSOVU" title="Sorting Hat Walkthrough" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+https://www.youtube.com/watch?v=lKnnIqDSOVU
 
 ## Relevant Links
 - [Check out the deployed site](https://caseys-sorting-hat.netlify.app/)
